@@ -61,3 +61,8 @@ debug-assertions = false
 overflow-checks = false
 lto = true
 strip = true
+
+# Temporary workaround: xelis-project fork requires edition2024 (nightly)
+# Using crates.io version 5.0.0 for testing
+[patch."https://github.com/xelis-project/curve25519-dalek"]
+curve25519-dalek = "5.0.0"
